@@ -1,0 +1,35 @@
+<mxfile host="app.diagrams.net" modified="2026-08-27T23:50:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="uml-mascotas" name="Página-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="mascota" value="&lt;b&gt;Mascota&lt;/b&gt;&lt;hr&gt;+ nombre: str&lt;br&gt;- _costo_consulta: float&lt;hr&gt;+ get_costo_consulta()&lt;br&gt;+ set_costo_consulta(costo)&lt;br&gt;+ obtener_descripcion()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="430" y="60" width="290" height="190" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="perro" value="&lt;b&gt;Perro&lt;/b&gt;&lt;hr&gt;- _cantidad_vacunas: int&lt;hr&gt;+ get_cantidad_vacunas()&lt;br&gt;+ set_cantidad_vacunas(cantidad)&lt;br&gt;+ obtener_descripcion()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="280" height="180" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="gato" value="&lt;b&gt;Gato&lt;/b&gt;&lt;hr&gt;- _cantidad_vidas: int&lt;hr&gt;+ get_cantidad_vidas()&lt;br&gt;+ set_cantidad_vidas(cantidad)&lt;br&gt;+ obtener_descripcion()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="430" y="360" width="280" height="180" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conejo" value="&lt;b&gt;Conejo&lt;/b&gt;&lt;hr&gt;- _tipo_alimentacion: str&lt;hr&gt;+ get_tipo_alimentacion()&lt;br&gt;+ set_tipo_alimentacion(tipo)&lt;br&gt;+ obtener_descripcion()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="780" y="360" width="300" height="180" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="app" value="&lt;b&gt;AplicacionMascotas&lt;/b&gt;&lt;hr&gt;+ mascotas: list&lt;hr&gt;+ agregar_mascota(mascota)&lt;br&gt;+ mostrar_catalogo()&lt;br&gt;+ calcular_costo_total_consultas()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="430" y="620" width="300" height="170" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="perro" target="mascota"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="gato" target="mascota"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="conejo" target="mascota"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="contiene 0..*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=diamondThin;startFill=0;endArrow=none;" edge="1" parent="1" source="app" target="mascota"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
